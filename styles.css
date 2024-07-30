@@ -52,8 +52,14 @@ ul {
   --bg-sidebar: red;
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url(font-roboto/Roboto-Regular.ttf);
+}
+
 * {
   background-color: #eee;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -77,6 +83,28 @@ body {
 
 .sidebar * {
   background-color: var(--bg-sidebar);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.logo > img {
+  height: 2.5rem;
+  width: auto;
+}
+
+.nav li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav li > img {
+  height: 1.3rem;
 }
 
 .header {
