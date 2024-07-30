@@ -126,19 +126,32 @@ body {
   border: 2px solid gray;
 }
 
-.card > .title {
+.projects .title {
   font-size: 1.1rem;
   font-weight: bold;
 }
 
-.card > .description {
+.projects .description {
   font-size: 0.8rem;
 }
 
 .announcements {
   background-color: salmon;
+  padding: 1rem;
+  padding-left: 0;
+}
+
+.announcements .title {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.announcements .description {
+  font-size: 0.6rem;
 }
 
 .trending {
   background-color: seagreen;
+  padding: 1rem;
+  padding-left: 0;
 }
