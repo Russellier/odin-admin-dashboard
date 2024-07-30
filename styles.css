@@ -56,7 +56,7 @@ body {
   display: grid;
   min-height: 100vh;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 10fr;
+  grid-template-rows: 1fr 5fr;
 }
 
 .sidebar {
@@ -65,10 +65,10 @@ body {
   display: grid;
   grid-template-rows: 30px 180px 90px;
   gap: 2rem;
-  /* display: flex;
-  flex-direction: column; */
-  gap: 2rem;
   color: white;
+  /*Easier
+  display: flex;
+  flex-direction: column; */
 }
 
 .sidebar * {
@@ -86,10 +86,31 @@ body {
 }
 
 .header > :nth-child(2),
-.header > :nth-child(4) {
+.header > :last-child {
   justify-self: end;
+}
+
+.header > :first-child,
+.header > :nth-child(3) {
+  justify-self: start;
 }
 
 .main {
   background-color: lightgreen;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.projects {
+  background-color: orange;
+  grid-row: 1 / 3;
+}
+
+.announcements {
+  background-color: salmon;
+}
+
+.trending {
+  background-color: seagreen;
 }
