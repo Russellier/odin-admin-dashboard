@@ -43,3 +43,28 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+* {
+  background-color: #eee;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 10fr;
+}
+
+.header {
+  background-color: lightblue;
+  grid-column: 2 / 3;
+}
+
+.sidebar {
+  background-color: lightgoldenrodyellow;
+  grid-row: 1 / 3;
+}
+
+.main {
+  background-color: lightgreen;
+}
