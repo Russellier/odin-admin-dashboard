@@ -44,6 +44,10 @@ h6 {
   overflow-wrap: break-word;
 }
 
+ul {
+  list-style: none;
+}
+
 :root {
   --bg-sidebar: red;
 }
@@ -66,7 +70,7 @@ body {
   grid-template-rows: 30px 180px 90px;
   gap: 2rem;
   color: white;
-  /*Easier
+  /*Easier:
   display: flex;
   flex-direction: column; */
 }
@@ -104,7 +108,31 @@ body {
 
 .projects {
   background-color: orange;
+  padding: 1rem;
   grid-row: 1 / 3;
+}
+
+.projects .project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.project-cards * {
+  background-color: skyblue;
+}
+
+.card {
+  border: 2px solid gray;
+}
+
+.card > .title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.card > .description {
+  font-size: 0.8rem;
 }
 
 .announcements {
