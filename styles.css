@@ -71,7 +71,7 @@ body {
   display: grid;
   min-height: 100vh;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 8.5rem 1fr;
 }
 
 button:hover {
@@ -92,6 +92,12 @@ button:hover {
 
 .sidebar * {
   background-color: var(--bg-sidebar);
+  color: var(--font-color-1);
+}
+
+.sidebar > * {
+  padding: 1rem;
+  padding-top: 2rem;
 }
 
 .logo {
@@ -211,8 +217,9 @@ button:hover {
 .main {
   background-color: var(--bg-secondary);
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 8fr 3fr;
   grid-template-rows: 1fr 1fr;
+  align-items: start;
 }
 
 .main * {
@@ -234,18 +241,22 @@ button:hover {
 .projects .project-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(3, minmax(120px, 1fr));
   gap: 1rem;
 }
 
 .project-cards > .card {
-  border-left: 5px solid gray;
+  border-left: 5px solid rgb(19, 19, 19);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card {
   border-radius: 10px;
   padding: 5px;
-  -webkit-box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 5px 4px 10px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 4px 10px 2px rgba(0, 0, 0, 0.3);
 }
 
 .card,
@@ -289,8 +300,7 @@ button > img {
 }
 
 .announcements {
-  padding: 1rem;
-  padding-left: 0;
+  padding: 1rem 1rem 0 0;
 }
 
 .announcements .title {
@@ -303,8 +313,7 @@ button > img {
 }
 
 .trending {
-  padding: 1rem;
-  padding-left: 0;
+  padding: 0 1rem 0 0;
 }
 
 .trending li {
@@ -326,4 +335,12 @@ p.username {
 p.name {
   font-size: 0.6rem;
   color: var(--font-color-3);
+}
+
+[src$='.svg'] {
+  fill: white;
+}
+
+.logo > img {
+  fill: white;
 }
