@@ -308,6 +308,16 @@ button > img {
   padding-left: 0;
 }
 
+.announcements > .card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.announcements .divider {
+  border-bottom: 1px solid var(--bg-secondary);
+}
+
 .announcements .title {
   font-size: 0.75rem;
   font-weight: bold;
